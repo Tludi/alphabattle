@@ -10,9 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var battleResultLabel: UILabel!
+    
+    @IBAction func battleButton(_ sender: Any) {
+        let testBattle = BaseBattle.battle20()
+        print(testBattle)
+        battleResultLabel.text = String(testBattle)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let scenes = DataManager.getDataFromFile()
+        
+        testLabel.text = scenes.first?.arenaName
+        
+        let testBattle = BaseBattle.battle20()
+        print(testBattle)
+        
     }
 
 

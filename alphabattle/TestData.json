@@ -1,0 +1,12 @@
+[
+    {
+        "id": "5",
+        "arenaName": "Opening Scene",
+        "arenaText": "This is the opening scene in which the rest of the story will grow from"
+    },
+    {
+        "id": "55",
+        "arenaName": "End Scene",
+        "arenaText": "This is the end scene in which the story is finished"
+    }
+]

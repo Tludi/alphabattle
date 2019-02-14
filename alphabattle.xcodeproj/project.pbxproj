@@ -12,6 +12,11 @@
 		0051B6442214EA5E006155C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0051B6422214EA5E006155C2 /* Main.storyboard */; };
 		0051B6462214EA5F006155C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0051B6452214EA5F006155C2 /* Assets.xcassets */; };
 		0051B6492214EA5F006155C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0051B6472214EA5F006155C2 /* LaunchScreen.storyboard */; };
+		0051B6512214EC93006155C2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B6502214EC93006155C2 /* DataManager.swift */; };
+		0051B6532214EE26006155C2 /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0051B6522214EE26006155C2 /* TestData.json */; };
+		0051B6552214EE60006155C2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B6542214EE60006155C2 /* Models.swift */; };
+		0051B6572214F375006155C2 /* BattleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0051B6562214F375006155C2 /* BattleModel.swift */; };
+		71C8222BEC272F5D9EF1967A /* Pods_alphabattle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FC7592B71E46FCE9B6E310 /* Pods_alphabattle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		0051B6452214EA5F006155C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0051B6482214EA5F006155C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0051B64A2214EA5F006155C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0051B6502214EC93006155C2 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		0051B6522214EE26006155C2 /* TestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
+		0051B6542214EE60006155C2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		0051B6562214F375006155C2 /* BattleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleModel.swift; sourceTree = "<group>"; };
+		591BA2DD8CF8198BF3B29F12 /* Pods-alphabattle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alphabattle.release.xcconfig"; path = "Target Support Files/Pods-alphabattle/Pods-alphabattle.release.xcconfig"; sourceTree = "<group>"; };
+		73D47845ACDA7236DB98BE60 /* Pods-alphabattle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alphabattle.debug.xcconfig"; path = "Target Support Files/Pods-alphabattle/Pods-alphabattle.debug.xcconfig"; sourceTree = "<group>"; };
+		78FC7592B71E46FCE9B6E310 /* Pods_alphabattle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_alphabattle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C8222BEC272F5D9EF1967A /* Pods_alphabattle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,8 @@
 			children = (
 				0051B63D2214EA5E006155C2 /* alphabattle */,
 				0051B63C2214EA5E006155C2 /* Products */,
+				B6EC61C37A7E83BED5B88A20 /* Pods */,
+				D65C662E1DCA8147DD78C53B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +75,29 @@
 				0051B6452214EA5F006155C2 /* Assets.xcassets */,
 				0051B6472214EA5F006155C2 /* LaunchScreen.storyboard */,
 				0051B64A2214EA5F006155C2 /* Info.plist */,
+				0051B6502214EC93006155C2 /* DataManager.swift */,
+				0051B6522214EE26006155C2 /* TestData.json */,
+				0051B6542214EE60006155C2 /* Models.swift */,
+				0051B6562214F375006155C2 /* BattleModel.swift */,
 			);
 			path = alphabattle;
+			sourceTree = "<group>";
+		};
+		B6EC61C37A7E83BED5B88A20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73D47845ACDA7236DB98BE60 /* Pods-alphabattle.debug.xcconfig */,
+				591BA2DD8CF8198BF3B29F12 /* Pods-alphabattle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D65C662E1DCA8147DD78C53B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78FC7592B71E46FCE9B6E310 /* Pods_alphabattle.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0051B64D2214EA5F006155C2 /* Build configuration list for PBXNativeTarget "alphabattle" */;
 			buildPhases = (
+				FA28D32FA058E44432E97B00 /* [CP] Check Pods Manifest.lock */,
 				0051B6372214EA5E006155C2 /* Sources */,
 				0051B6382214EA5E006155C2 /* Frameworks */,
 				0051B6392214EA5E006155C2 /* Resources */,
+				945DAD426026829340EE1C3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,10 +163,60 @@
 				0051B6492214EA5F006155C2 /* LaunchScreen.storyboard in Resources */,
 				0051B6462214EA5F006155C2 /* Assets.xcassets in Resources */,
 				0051B6442214EA5E006155C2 /* Main.storyboard in Resources */,
+				0051B6532214EE26006155C2 /* TestData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		945DAD426026829340EE1C3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-alphabattle/Pods-alphabattle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-alphabattle/Pods-alphabattle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA28D32FA058E44432E97B00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alphabattle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0051B6372214EA5E006155C2 /* Sources */ = {
@@ -136,7 +224,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0051B6412214EA5E006155C2 /* ViewController.swift in Sources */,
+				0051B6512214EC93006155C2 /* DataManager.swift in Sources */,
+				0051B6572214F375006155C2 /* BattleModel.swift in Sources */,
 				0051B63F2214EA5E006155C2 /* AppDelegate.swift in Sources */,
+				0051B6552214EE60006155C2 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +371,7 @@
 		};
 		0051B64E2214EA5F006155C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D47845ACDA7236DB98BE60 /* Pods-alphabattle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +390,7 @@
 		};
 		0051B64F2214EA5F006155C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 591BA2DD8CF8198BF3B29F12 /* Pods-alphabattle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
